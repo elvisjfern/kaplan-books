@@ -1,0 +1,53 @@
+.header {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+
+  & .title {
+    font-size: 23px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.03em;
+    flex: 1;
+  }
+
+  & .mat-flat-button {
+    height: 40px;
+    background-color: #1446b3;
+  }
+}
+
+.search-text {
+  width: 50%;
+  & ::ng-deep .mat-form-field-prefix {
+    bottom: -4px;
+  }
+
+  & .mat-icon {
+    width: 1.5em;
+    text-align: center;
+  }
+
+  & mat-label {
+    font-weight: 300;
+  }
+}
+
+.books-container {
+  header {
+    font-weight: 600;
+    margin-bottom: 22px;
+    color: #465b72;
+    letter-spacing: 0.05em;
+  }
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.book-container {
+  flex: 0 1 calc(50% - 12px);
+}

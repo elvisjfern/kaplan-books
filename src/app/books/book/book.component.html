@@ -1,0 +1,18 @@
+<mat-card class="book-card">
+  <mat-card-content>
+    <header class="title">
+      {{ book.title }}
+    </header>
+    <section class="book-desc">
+      <div>
+        <span>Authors: </span> <span>{{ book.authors.join(', ')}}</span>
+      </div>
+      <div>
+        <span>Publisher: </span> <span>{{ book.publisher}}</span>
+      </div>
+      <div>
+        <span>Published Date: </span> <span>{{ book.publishedDate}}</span>
+      </div>
+    </section>
+  </mat-card-content>
+</mat-card>

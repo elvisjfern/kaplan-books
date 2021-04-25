@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="title">
+    Books
+  </div>
+  <button mat-flat-button color="primary" (click)="handleBookCreate()">Create New Book</button>
+</header>
+<section>
+  <section class="search">
+    <mat-form-field class="search-text">
+      <mat-label>Search</mat-label>
+      <mat-icon matPrefix>search</mat-icon>
+      <input type="text" (input)="handleSearchChange($event)" matInput>
+    </mat-form-field>
+  </section>
+  <section class="books-container">
+    <header>All Books</header>
+    <section class="books-list">
+      <div *ngFor="let book of filteredBooks" class="book-container">
+        <app-book [book]="book"></app-book>
+      </div>
+    </section>
+  </section>
+</section>
