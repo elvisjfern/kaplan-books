@@ -1,9 +1,9 @@
 <mat-card class="book-card">
-  <mat-card-content>
+  <mat-card-content role="region">
     <header class="title">
       {{ book.title }}
     </header>
-    <section class="book-desc">
+    <section class="book-desc" role="group">
       <div>
         <span>Authors: </span> <span>{{ book.authors.join(', ')}}</span>
       </div>
