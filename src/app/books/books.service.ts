@@ -10,11 +10,13 @@ import { BooksResponse } from './books.response.dto';
   providedIn: 'root',
 })
 export class BooksService {
+  readonly booksFetchURL = 'https://www.googleapis.com/books/v1/volumes';
+
   constructor(private httpClient: HttpClient) {}
 
   fetchBooks(): Observable<Array<Book>> {
     return this.httpClient
-      .get('https://www.googleapis.com/books/v1/volumes', {
+      .get(this.booksFetchURL, {
         params: {
           q: 'kaplan test prep',
         },
