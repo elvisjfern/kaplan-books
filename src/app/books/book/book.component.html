@@ -1,5 +1,5 @@
 <mat-card class="book-card">
-  <mat-card-content role="region">
+  <mat-card-content [attr.aria-label]="book.title + ' info'">
     <header class="title">
       {{ book.title }}
     </header>
