@@ -1,7 +1,8 @@
 # KaplanBooks
 
 Kaplan Books Angular app.
-The app is puslished docker hub repository under **elvisfernandes/kaplan-books**
+
+The app is puslished in docker hub repository under **elvisfernandes/kaplan-books**
 
 ## Run the following command to start the app
 
